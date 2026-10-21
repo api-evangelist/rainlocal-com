@@ -1,25 +1,61 @@
 aid: rainlocal-com
+
 name: Rain
-description: 'Rain is a company surfaced via the API Evangelist harvest backlog (source: vc-portfolio;
-  backed by 500-global) and added to the network as a stub for full-pipeline profiling.'
+
+image: https://cdn.prod.website-files.com/666caaf468c78cda46dab607/66da4a9fda93aec2d2bf4888_OG%20Image.png
+
+description: 'Rain is a digital marketing agency specializing in financial institutions and banks across the United States. They help banks and credit unions grow deposits, increase loan volume, recruit talent, and expand market share through tailored digital marketing strategies, SEO, AEO, and data-driven campaigns. Serving over 50 financial organizations, Rain combines industry expertise with modern marketing technology to drive measurable growth for its clients.'
+
 url: https://raw.githubusercontent.com/api-evangelist/rainlocal-com/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:vc-portfolio
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-21 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-21'
+
 modified: '2026-10-21'
+
 tags:
 - Company
-apis: []
+- Marketing
+- Financial Services
+- Digital Agency
+- SEO
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
-x-backed-by:
-- 500-global
+
 common:
+- type: Hosts
+  url: hosts/rainlocal-com-hosts.yml
+- type: Vendors
+  url: vendors/rainlocal-com-vendors.yml
+- type: PrivacyPolicy
+  url: https://www.rainlocal.com/privacy-policy
+- type: DomainSecurity
+  url: security/rainlocal-com-domain-security.yml
 - type: Website
   url: https://rainlocal.com
+
+- type: Documentation
+  url: https://www.rainlocal.com
+
+apis: []
+
+x-backed-by:
+- 500-global
+x-enrichment:
+  date: '2026-10-21'
+  status: enriched
+  artifacts_added: 7
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
